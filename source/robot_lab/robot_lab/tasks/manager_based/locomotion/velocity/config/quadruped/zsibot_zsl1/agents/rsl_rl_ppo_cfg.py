@@ -43,3 +43,13 @@ class ZsibotZSL1FlatPPORunnerCfg(ZsibotZSL1RoughPPORunnerCfg):
 
         self.max_iterations = 5000
         self.experiment_name = "zsibot_zsl1_flat"
+
+
+@configclass
+class ZsibotZSL1FastFlatPPORunnerCfg(ZsibotZSL1FlatPPORunnerCfg):
+    """Runner configuration for the high-speed flat-ground policy."""
+
+    def __post_init__(self):
+        super().__post_init__()
+        self.max_iterations = 5000
+        self.experiment_name = "zsibot_zsl1_fast_flat"
