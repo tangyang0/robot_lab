@@ -200,8 +200,10 @@ RSL-RL:
 # Train
 python scripts/reinforcement_learning/rsl_rl/train.py --task=<TASK_NAME> --headless
 
-# Play
+# Play-
 python scripts/reinforcement_learning/rsl_rl/play.py --task=<TASK_NAME>
+python scripts/reinforcement_learning/rsl_rl/play.py --task RobotLab-Isaac-Velocity-Flat-Zsibot-ZSL1-v0   --checkpoint logs/rsl_rl/zsibot_zsl1_flat/2026-08-31_21-53-21_zsl1_flat_from_6600/model_6600.pt  --keyboard
+python scripts/reinforcement_learning/rsl_rl/play.py --task RobotLab-Isaac-Velocity-Rough-V5-Zsibot-ZSL1-v0   --checkpoint /home/tangyang/workspace/robot_lab/logs/rsl_rl/zsibot_zsl1_rough_v5/2026-10-06_09-57-58_deployment_limits_rough_32k/model_2299.pt  --keyboard
 ```
 
 CusRL (**Experimental**):
