@@ -65,3 +65,11 @@ register_rough_v5_task()
 # Playback with the real deployment controller target limits.
 from .rough_v4_deploy_registration import register_rough_v4_deploy_task
 register_rough_v4_deploy_task()
+
+# Independent stance-width and lateral-push refinement.
+from .rough_v6_registration import register_rough_v6_task
+register_rough_v6_task()
+
+# Softer-push continuation targeting both rough gains and flat 0.8 straightness.
+from .rough_v7_registration import register_rough_v7_task
+register_rough_v7_task()
