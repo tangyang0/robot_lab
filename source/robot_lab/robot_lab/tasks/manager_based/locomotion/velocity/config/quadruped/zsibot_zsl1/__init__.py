@@ -73,3 +73,7 @@ register_rough_v6_task()
 # Softer-push continuation targeting both rough gains and flat 0.8 straightness.
 from .rough_v7_registration import register_rough_v7_task
 register_rough_v7_task()
+
+# Wide-track/smoothness/reversal continuation of V7.
+from .rough_v8_registration import register_rough_v8_task
+register_rough_v8_task()
