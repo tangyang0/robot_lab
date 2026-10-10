@@ -77,3 +77,7 @@ register_rough_v7_task()
 # Wide-track/smoothness/reversal continuation of V7.
 from .rough_v8_registration import register_rough_v8_task
 register_rough_v8_task()
+
+# Orientation-fix continuation of V8.
+from .rough_v9_registration import register_rough_v9_task
+register_rough_v9_task()
