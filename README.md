@@ -190,6 +190,21 @@ This stops and removes the containers, but keeps the images.
 
 </details>
 
+## Replay the delivered policies
+
+The three delivered trainings live under `logs/rsl_rl/` (git-ignored; keep them
+when copying the repo). Replay them with:
+
+```bash
+# flat / smooth_ft policy (stable flat-ground walking)
+python scripts/reinforcement_learning/rsl_rl/play.py --task RobotLab-Isaac-Velocity-Flat-Zsibot-ZSL1-v0 --checkpoint logs/rsl_rl/zsibot_zsl1_flat/2026-09-23_18-56-21_smooth_ft/model_6998.pt --keyboard
+
+# rough V11 policy (full-stack obstacle traversal, current main deliverable)
+python scripts/reinforcement_learning/rsl_rl/play.py --task RobotLab-Isaac-Velocity-Rough-V11-Zsibot-ZSL1-v0 --checkpoint logs/rsl_rl/zsibot_zsl1_rough_v11/2026-10-11_08-31-18_fresh_fullstack_from_smooth/model_2400.pt --keyboard
+```
+
+See `docs/三次实验记录.md` for configs, results and retraining commands.
+
 ## Try examples
 
 You can use the following commands to run all environments:
